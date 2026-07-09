@@ -1,0 +1,27 @@
+{
+  "name": "lost-in-the-plugins",
+  "owner": {
+    "name": "lost-in-the"
+  },
+  "description": "Claude Code plugin suite for the lost-in-the tools: grove (git worktree + tmux manager) and woods (Rails code-intelligence gem). Each plugin is a git-subdir reference into its home repo, so installs fetch only the skill subtree — not the whole codebase.",
+  "plugins": [
+    {
+      "name": "grove-plugin",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/lost-in-the/grove.git",
+        "path": "skills/grove-worktree-management"
+      },
+      "description": "Grove worktree management skill: zero-friction git worktree + tmux workflows for AI agents and humans. Requires grove >= 0.8.0."
+    },
+    {
+      "name": "woods-plugin",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/lost-in-the/woods.git",
+        "path": "plugin"
+      },
+      "description": "Woods user guides: set up, configure MCP servers for, and diagnose the Woods Rails code-intelligence gem (woods-setup, woods-mcp-config, woods-diagnose). Requires woods >= 1.5.0."
+    }
+  ]
+}

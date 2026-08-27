@@ -21,7 +21,7 @@
         "url": "https://github.com/lost-in-the/woods.git",
         "path": "plugin"
       },
-      "description": "Woods user guides: set up, configure MCP servers for, and diagnose the Woods Rails code-intelligence gem (woods-setup, woods-mcp-config, woods-diagnose). Requires woods >= 1.5.0."
+      "description": "Woods user guides: set up, configure MCP servers for, and diagnose the Woods Rails code-intelligence gem (woods-setup, woods-mcp-config, woods-diagnose). Requires woods >= 2.0.0."
     }
   ]
 }

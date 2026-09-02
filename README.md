@@ -8,7 +8,7 @@ repo.
 | Plugin | What it gives you | Home repo | Min tool version |
 |--------|-------------------|-----------|------------------|
 | `grove-plugin` | The `grove-worktree-management` skill — command reference, safety rules, and deterministic helper scripts for [grove](https://github.com/lost-in-the/grove), the git worktree + tmux manager. | [`lost-in-the/grove`](https://github.com/lost-in-the/grove) → `skills/grove-worktree-management/` | grove **≥ 0.8.0** |
-| `woods-plugin` | Three guide skills — `woods-setup`, `woods-mcp-config`, `woods-diagnose` — for [woods](https://github.com/lost-in-the/woods), the Rails code-intelligence gem. | [`lost-in-the/woods`](https://github.com/lost-in-the/woods) → `plugin/` | woods **≥ 1.5.0** |
+| `woods-plugin` | Five guide skills — `woods-setup`, `woods-mcp-config`, `woods-investigate`, `woods-agent-enable`, `woods-diagnose` — for [woods](https://github.com/lost-in-the/woods), the Rails code-intelligence gem: install/upgrade, MCP configuration, index-driven investigation (audits, code reviews, impact analysis), repository agent enablement, and diagnosis. | [`lost-in-the/woods`](https://github.com/lost-in-the/woods) → `plugin/` | woods **≥ 2.0.0** |
 
 ## Install
 
@@ -61,7 +61,7 @@ The plugin *content* lives in the home repos, not here:
 - `grove-plugin` → `lost-in-the/grove` at `skills/grove-worktree-management/` (manifest at
   `.../.claude-plugin/plugin.json`; `SKILL.md` at the root loads as a single-skill plugin).
 - `woods-plugin` → `lost-in-the/woods` at `plugin/` (manifest at
-  `plugin/.claude-plugin/plugin.json`; three skills under `plugin/skills/`).
+  `plugin/.claude-plugin/plugin.json`; five skills under `plugin/skills/`).
 
 ## Maintenance
 

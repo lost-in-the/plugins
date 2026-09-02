@@ -61,7 +61,7 @@ The plugin *content* lives in the home repos, not here:
 - `grove-plugin` → `lost-in-the/grove` at `skills/grove-worktree-management/` (manifest at
   `.../.claude-plugin/plugin.json`; `SKILL.md` at the root loads as a single-skill plugin).
 - `woods-plugin` → `lost-in-the/woods` at `plugin/` (manifest at
-  `plugin/.claude-plugin/plugin.json`; three skills under `plugin/skills/`).
+  `plugin/.claude-plugin/plugin.json`; five skills under `plugin/skills/`).
 
 ## Maintenance
 

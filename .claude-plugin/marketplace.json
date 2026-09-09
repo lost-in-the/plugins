@@ -21,7 +21,7 @@
         "url": "https://github.com/lost-in-the/woods.git",
         "path": "plugin"
       },
-      "description": "Woods user guides: set up, configure MCP servers for, and diagnose the Woods Rails code-intelligence gem (woods-setup, woods-mcp-config, woods-diagnose). Requires woods >= 1.5.0."
+      "description": "Woods guides for agents: set up and upgrade, configure MCP servers for, investigate codebases with, enable a repository's agents on, and diagnose the Woods Rails code-intelligence gem (woods-setup, woods-mcp-config, woods-investigate, woods-agent-enable, woods-diagnose), plus opt-in PostToolUse and SessionStart hooks that keep the index fresh. Plugin 2.3.0 targets woods 2.0.0.beta1 or newer; the skills degrade to the installed version through their preflight."
     }
   ]
 }

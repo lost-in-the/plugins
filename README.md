@@ -8,7 +8,7 @@ repo.
 | Plugin | What it gives you | Home repo | Min tool version |
 |--------|-------------------|-----------|------------------|
 | `grove-plugin` | The `grove-worktree-management` skill — command reference, safety rules, and deterministic helper scripts for [grove](https://github.com/lost-in-the/grove), the git worktree + tmux manager. | [`lost-in-the/grove`](https://github.com/lost-in-the/grove) → `skills/grove-worktree-management/` | grove **≥ 0.8.0** |
-| `woods-plugin` | Five guide skills (`woods-setup`, `woods-mcp-config`, `woods-investigate`, `woods-agent-enable`, `woods-diagnose`) for [woods](https://github.com/lost-in-the/woods), the Rails code-intelligence gem: install and upgrade, MCP configuration, index-driven investigation (audits, code reviews, impact analysis), repository agent enablement, and diagnosis. Plugin 2.3.0 also ships opt-in hooks that refresh the index after edits and warn when it is stale. | [`lost-in-the/woods`](https://github.com/lost-in-the/woods) at `plugin/` | woods **2.0.0.beta1 or newer** (a prerelease: pin it explicitly, `~> 2.0` does not resolve it) |
+| `woods-plugin` | Five guide skills (`woods-setup`, `woods-mcp-config`, `woods-investigate`, `woods-agent-enable`, `woods-diagnose`) for [woods](https://github.com/lost-in-the/woods): install and upgrade, MCP configuration, codebase investigation, repository agent enablement, and diagnosis. Optional hooks refresh the index and provide bounded context when the installed gem supports the required helpers. | [`lost-in-the/woods`](https://github.com/lost-in-the/woods) at `plugin/` | Base guide workflows: woods **2.0.0.beta1 or newer**. Newer helpers have separate capability requirements; prereleases must be pinned explicitly. |
 
 ## Install
 
@@ -43,9 +43,18 @@ installed than the plugin assumes, so every skill opens with a **Version Preflig
   at syntax. `grove --check-update` surfaces available grove releases (it runs even under
   agent mode, which otherwise suppresses the passive update notice).
 
-The **Min tool version** column above is the floor each plugin currently assumes. When a plugin
-starts documenting a newer capability, bump both the floor here and the plugin's
-`version` (see Maintenance), and land it with the tool release that ships the capability.
+The **Min tool version** column is the floor for the base guide workflows, not a
+promise that every optional helper exists in that version. For Woods, check the
+installed gem before enabling hooks or running newer executables. Refresh and
+context hooks have separate opt-ins; neither is enabled by installing the plugin.
+The [Woods hook guide](https://github.com/lost-in-the/woods/blob/main/docs/CLIENT_HOOKS.md)
+and the skills identify capabilities that are still unreleased. A plugin update
+does not update the gem or make those capabilities available in an older gem.
+
+Raise the floor here when a base workflow requires a newer tool. For optional
+capabilities, document their separate requirements and preserve the preflight.
+Bump the home repo's plugin `version` whenever skill content changes (see
+Maintenance); the marketplace does not duplicate that changing version number.
 
 ## Structure
 

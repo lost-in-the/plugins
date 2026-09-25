@@ -7,7 +7,7 @@ repo.
 
 | Plugin | What it gives you | Home repo | Min tool version |
 |--------|-------------------|-----------|------------------|
-| `grove-plugin` | The `grove-worktree-management` skill — command reference, safety rules, and deterministic helper scripts for [grove](https://github.com/lost-in-the/grove), the git worktree + tmux manager. | [`lost-in-the/grove`](https://github.com/lost-in-the/grove) → `skills/grove-worktree-management/` | grove **≥ 0.8.0** |
+| `grove-plugin` | The `grove-worktree-management` skill — command reference, safety rules, and deterministic helper scripts for [grove](https://github.com/lost-in-the/grove), the git worktree manager for tmux or [herdr](https://herdr.dev). | [`lost-in-the/grove`](https://github.com/lost-in-the/grove) → `skills/grove-worktree-management/` | grove **≥ 0.8.0**. herdr support and the `session` JSON field (named `tmux` before) need grove **≥ 0.11.0**; the skill's preflight checks the installed version. |
 | `woods-plugin` | Five guide skills (`woods-setup`, `woods-mcp-config`, `woods-investigate`, `woods-agent-enable`, `woods-diagnose`) for [woods](https://github.com/lost-in-the/woods): install and upgrade, MCP configuration, codebase investigation, repository agent enablement, and diagnosis. Optional hooks refresh the index and provide bounded context when the installed gem supports the required helpers. | [`lost-in-the/woods`](https://github.com/lost-in-the/woods) at `plugin/` | Base guide workflows: woods **2.0.0.beta1 or newer**. Newer helpers have separate capability requirements; prereleases must be pinned explicitly. |
 
 ## Install

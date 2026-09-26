@@ -51,6 +51,15 @@ The [Woods hook guide](https://github.com/lost-in-the/woods/blob/main/docs/CLIEN
 and the skills identify capabilities that are still unreleased. A plugin update
 does not update the gem or make those capabilities available in an older gem.
 
+For Console users, the Woods plugin documents the
+[2.0.1 maintenance patch](https://github.com/lost-in-the/woods/blob/v2.0.1/docs/CONSOLE_MCP_SETUP.md#read-policy-compatibility)
+and points applications remaining on 1.6 to the
+[1.6.4 guide](https://github.com/lost-in-the/woods/blob/v1.6.4/docs/CONSOLE_MCP_SETUP.md#read-policy-compatibility).
+Update the application's gem separately; updating the plugin does not patch its
+Console server. These maintenance releases do not provide the planned 2.1
+features marked unreleased in the skills. The base guide floor remains
+`2.0.0.beta1`; newer capabilities keep their own installed-version checks.
+
 Raise the floor here when a base workflow requires a newer tool. For optional
 capabilities, document their separate requirements and preserve the preflight.
 Bump the home repo's plugin `version` whenever skill content changes (see

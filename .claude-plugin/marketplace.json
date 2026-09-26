@@ -21,7 +21,7 @@
         "url": "https://github.com/lost-in-the/woods.git",
         "path": "plugin"
       },
-      "description": "Woods guides for agents: setup and upgrade, MCP configuration, codebase investigation, repository agent enablement, and diagnosis, plus optional edit-refresh and context hooks. Base guide workflows support woods 2.0.0.beta1 or newer; each skill checks installed capabilities before using newer helpers. The plugin version is independent of the gem version."
+      "description": "Woods guides for agents: setup and upgrade, MCP configuration, codebase investigation, repository agent enablement, and diagnosis, plus optional edit-refresh and context hooks. Base guide workflows support woods 2.0.0.beta1 or newer; each skill checks installed capabilities before using newer helpers. Includes version-specific Console compatibility guidance for 2.0.1 and the 1.6.4 maintenance patch. The plugin version is independent of the gem version."
     }
   ]
 }

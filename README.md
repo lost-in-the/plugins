@@ -47,17 +47,20 @@ The **Min tool version** column is the floor for the base guide workflows, not a
 promise that every optional helper exists in that version. For Woods, check the
 installed gem before enabling hooks or running newer executables. Refresh and
 context hooks have separate opt-ins; neither is enabled by installing the plugin.
-The [Woods hook guide](https://github.com/lost-in-the/woods/blob/main/docs/CLIENT_HOOKS.md)
-and the skills identify capabilities that are still unreleased. A plugin update
-does not update the gem or make those capabilities available in an older gem.
+The [Woods hook guide](https://github.com/lost-in-the/woods/blob/v2.1.0/docs/CLIENT_HOOKS.md)
+and the skills identify each capability's required gem version. Woods 2.1 adds
+conservative constant-reference edges and expanded discovery; upgrading an
+existing 2.0 index requires one full extraction and validation. See the
+[2.1 upgrade notes](https://github.com/lost-in-the/woods/blob/v2.1.0/docs/UPGRADING_TO_2.md#updating-an-existing-20-installation-to-21).
+A plugin update does not update the gem or add these capabilities to an older gem.
 
 For Console users, the Woods plugin documents the
 [2.0.1 maintenance patch](https://github.com/lost-in-the/woods/blob/v2.0.1/docs/CONSOLE_MCP_SETUP.md#read-policy-compatibility)
 and points applications remaining on 1.6 to the
 [1.6.4 guide](https://github.com/lost-in-the/woods/blob/v1.6.4/docs/CONSOLE_MCP_SETUP.md#read-policy-compatibility).
 Update the application's gem separately; updating the plugin does not patch its
-Console server. These maintenance releases do not provide the planned 2.1
-features marked unreleased in the skills. The base guide floor remains
+Console server. These maintenance releases do not provide the new Woods 2.1
+reference and discovery features. The base guide floor remains
 `2.0.0.beta1`; newer capabilities keep their own installed-version checks.
 
 Raise the floor here when a base workflow requires a newer tool. For optional
